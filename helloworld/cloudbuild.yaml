@@ -6,5 +6,5 @@ steps:
   args: [-c, 'pip install -r requirements.txt']
   dir: 'helloworld'
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'hello_http', '--trigger-http', '--runtime', 'python39']
+  args: ['functions', 'deploy', 'hello_http', '--trigger-http', '--runtime', 'python39', '--region', '$LOCATION']
   dir: 'helloworld'
