@@ -20,6 +20,6 @@ def hello_http(request):
     elif request_args and 'name' in request_args:
         name = request_args['name']
     else:
-        name = 'World'
+        name = 'New World'
     return 'Hello {}!'.format(escape(name))
     
